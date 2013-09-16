@@ -4,13 +4,13 @@ RM := rm -rf
 CFLAGS = -Wall -c $(DEBUG)
 LFLAGS = -Wall -Wextra $(DEBUG)
 LIBS := -lm
-SRC := main.c
+SRC := name-search.c
 PROF_O := gmon.out
 DEPS := tads.h libs.h
-OBJS := main.o
+OBJS := name-search.o
 DEBUG := -g -pg
-NAME := main
-NAME_TAR := main_test.tar
+NAME := name-search
+NAME_TAR := name-search.tar
 
 # All Target
 all: $(NAME)
